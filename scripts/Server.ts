@@ -21,4 +21,5 @@ function callMethod<T extends keyof Server>(method: T, ...args: Parameters<Serve
     return Meteor.call(method, ...args) as ReturnType<Server[T]>;
 }
 type j = ReturnType<Server['bruh']>
+
 const k = callMethod('bruh')
